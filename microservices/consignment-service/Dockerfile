@@ -2,7 +2,7 @@ FROM golang:1.11.0 as builder
 
 WORKDIR /go/src/github.com/andreylm/learning/microservices/consignment-service
 
-COPY . .
+COPY ../ ../
 
 RUN go get -d
 
